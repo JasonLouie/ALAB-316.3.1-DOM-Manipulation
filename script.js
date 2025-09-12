@@ -26,7 +26,9 @@ const menuLinks = [
 const mainEl = document.querySelector("main");
 
 mainEl.style.backgroundColor = "var(--main-bg)";
-mainEl.innerHTML = "<h1>DOM Manipulation</h1>";
+const mainElH1 = document.createElement("h1");
+mainEl.textContent = "DOM Manipulation";
+mainEl.appendChild(mainElH1);
 
 mainEl.classList.add("flex-ctr");
 
@@ -73,9 +75,6 @@ const topMenuLinks = topMenuEl.querySelectorAll("a");
 
 // Attach a delegated 'click' event listener to topMenuEl.
 topMenuEl.addEventListener("click", handleTopMenuClick);
-
-// Access h1 from mainEl
-const mainElH1 = mainEl.querySelector("h1");
 
 function handleTopMenuClick(e) {
     // The first line of code of the event listener function should call the event object's preventDefault() method.
