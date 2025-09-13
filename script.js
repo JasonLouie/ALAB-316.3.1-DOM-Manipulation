@@ -137,8 +137,8 @@ function removeSubmenu() {
     const subMenuLinks = subMenuEl.querySelectorAll("a");
     subMenuLinks.forEach(menuLink => {
         subMenuEl.removeChild(menuLink);
-        subMenuEl.style.top = "0";
     });
+    subMenuEl.style.top = "0";
 }
 
 // Attach a delegated 'click' event listener to subMenuEl.
