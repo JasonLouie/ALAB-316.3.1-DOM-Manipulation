@@ -27,7 +27,7 @@ const mainEl = document.querySelector("main");
 
 mainEl.style.backgroundColor = "var(--main-bg)";
 const mainElH1 = document.createElement("h1");
-mainEl.textContent = "DOM Manipulation";
+mainElH1.textContent = "DOM Manipulation";
 mainEl.appendChild(mainElH1);
 
 mainEl.classList.add("flex-ctr");
